@@ -38,27 +38,28 @@
 .youtube-logo{
     height: 20px;
     margin-left: 5px;
-
 }
 
-.left-section .tooltip{
+.youtube-logo-box{
+    position: relative;
+    cursor: pointer;
+}
+
+.youtube-logo-box .tooltip{
     position: absolute;
     color: white;
     background-color: gray;
     border-radius: 3px;
-    padding-top: 6px;
-    padding-bottom: 6px;
     font-size: 12px;
-    padding-left: 8px;
-    padding-right: 8px;
-    bottom: -20px;
+    padding: 6px 8px 6px 8px;
+    bottom: -38px;
     right: -70px;
-    opacity: 1;
+    opacity: 0;
     pointer-events: none;
     transition: opacity 0.15s;
 }
 
-.youtube-logo:hover .tooltip{
+.youtube-logo-box:hover .tooltip{
     opacity: 1;
 }
 
